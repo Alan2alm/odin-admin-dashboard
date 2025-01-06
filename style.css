@@ -197,11 +197,7 @@ button{
     border-radius: 35%;
 }
 
-.home{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    
-}
+
 
 #sidebar-icons{
     height: 50%;
@@ -214,49 +210,57 @@ button{
     width: auto;
 }
 
+
+
 .rotated-icon{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
 
-.messages{
+.home{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    
+}
+
+.profile{
     grid-row-start: 5;
     grid-row-end: 6;
 }
 
-.profile{
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-
-.history{
+.messages{
     grid-row-start: 6;
     grid-row-end: 7;
 }
 
-.tasks{
+.history{
     grid-row-start: 7;
     grid-row-end: 8;
 }
 
-.communities{
+.tasks{
     grid-row-start: 8;
     grid-row-end: 9;
 }
 
-.settings{
-    grid-row-start: 10;
-    grid-row-end: 11;
+.communities{
+    grid-row-start: 9;
+    grid-row-end: 10;
 }
 
-.support{
+.settings{
     grid-row-start: 11;
     grid-row-end: 12;
 }
 
-.privacy{
+.support{
     grid-row-start: 12;
     grid-row-end: 13;
+}
+
+.privacy{
+    grid-row-start: 13;
+    grid-row-end: 14;
 }
 
 .searchbar-container{
