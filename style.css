@@ -1,11 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    text-overflow: ellipsis;
+    overflow:hidden;
 }
 
 body {
     height: 100vh;
     width: 100vw;
+    
 }
 
 .roboto-regular {
@@ -143,11 +146,36 @@ body {
 }
 
 .proyect > .content-descrip{
+    margin-top: 4%;
+    margin-left: 4%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 90%;
+}
 
+.description {
+    color: #686868;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-align: left;
 }
 
 .proyect > .project-options{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2%;  
+}
 
+.option-icon{
+    padding-top: 4%;
+}
+
+.option-icon svg{
+    height: 70%;
 }
 
 .sidebar > .logo-title{
@@ -191,13 +219,13 @@ a{
 button{
     background-color: deepskyblue;
     color: white;
-    height: 30%;
-    width: 30%;
+    height: 33%;
+    width: 25%;
     border-style: hidden;
     border-radius: 35%;
+    margin-top: 15%;
+    font-weight: 700;
 }
-
-
 
 #sidebar-icons{
     height: 50%;
@@ -271,30 +299,85 @@ button{
     display: flex;
     flex-direction: row;
     gap: 2%;
-
+    margin-top: 1%;
 }
 
 #searchbar {
     width: 80%;
-    height: 40%;
+    height: 50%;
     border: 1px hidden bisque;
-    border-radius: 5%;
+    border-radius: 10%;
     
 }
 
-.perfil-view{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 8;
-}
-
-.gretting{
+.profile-container{
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 8;
     grid-column-end: 11;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.profile-view{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-left: 5%;
+    gap: 10%;
+    width: 80%;
+}
+
+.profile-icon-container{
+    margin-top: 2%;
+}
+
+.profile-image{
+    height: 40px;
+    border-radius: 50%;
     
+}
+
+.profile-name{
+    margin-top: 3%;
+}
+
+.gretting{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+[class$='-title']{
+    font-size: 1.5rem;
+}
+
+.gretting-image{
+    height: 60px;
+    border-radius: 50%;
+}
+
+.gretting-user{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+}
+
+.gretting-msg{
+    font-size: 90%;
+}
+
+.gretting-name{
+    font-size: 2rem;
+    height: 70%;
 }
 
 .btns-container{
@@ -303,7 +386,8 @@ button{
     grid-column-start: 8;
     grid-column-end: 11;
     display: flex;
-    gap: 2%;   
+    align-content: center;
+    gap: 5%;   
 }
 
 #announcement1{
